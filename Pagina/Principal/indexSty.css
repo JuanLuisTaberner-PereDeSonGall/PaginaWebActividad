@@ -1,3 +1,7 @@
+
+
+
+
 @media screen and (min-width: 1301px) {
     :root {
         --color-fondo: #121212;
@@ -33,25 +37,20 @@
         top: 0;
         z-index: 1000;
         background-color: var(--color-nav);
-    }
-
-    .MenuInicial {
-        /* background-color: blueviolet; */
-        display: flex;
+                display: flex;
         justify-content: center;
         gap: 100px;
+    }
+
+    main{
+        width: 1100px;
+        height: 2000px;
+        color: var(--color-texto);
+        background-color: var(--color-fondo);
+        margin: 0 auto;
 
     }
 }
-
-
-
-
-
-
-
-
-
 
 /* por ahora centrate en el pc*/
 @media screen and (min-width: 501px) and (max-width: 1300px) {
@@ -65,4 +64,35 @@
     p {
         color: yellow;
     }
+}
+
+
+@font-face {
+    font-family: AmazDoom ;
+    src: url(../../Fuentecillas/amazdoom/AmazDooMLeft.ttf);
+}
+
+@font-face {
+    font-family: AncientRunes ;
+    src: url(../../Fuentecillas/ancient_runes/Ancient\ Runes_1_1.ttf);
+}
+
+@font-face {
+    font-family: DoomzDay ;
+    src: url(../../Fuentecillas/doomzday/doOmzday.ttf);
+}
+
+@font-face {
+    font-family: NordicRune ;
+    src: url(../../Fuentecillas/rune/rune.ttf);
+}
+
+@font-face {
+    font-family: SoleSurvivor ;
+    src: url(../../Fuentecillas/sole_survivor/SoleSurvivor.ttf);
+}
+
+@font-face {
+    font-family: SoleSurvivorRegular ;
+    src: url(../../Fuentecillas/sole_survivor/SoleSurvivorRegular.ttf);
 }
