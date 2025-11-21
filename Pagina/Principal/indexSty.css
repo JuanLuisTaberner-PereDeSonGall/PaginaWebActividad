@@ -1,0 +1,68 @@
+@media screen and (min-width: 1301px) {
+    :root {
+        --color-fondo: #121212;
+        --color-texto: #f0f0f0;
+        --color-acento: #ff4081;
+        --color-nav: #1e1e1e;
+        --color-borde: #333;
+        --color--header: #121212;
+    }
+    a{
+        color: var(--color-acento);
+    }
+
+    body {
+        background-image: url(../../Imagenes/IndexImages/79410.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    header {
+        background-color: var(--color--header);
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: var(--color-nav);
+    }
+
+    .MenuInicial {
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* por ahora centrate en el pc*/
+@media screen and (min-width: 501px) and (max-width: 1300px) {
+    p {
+        color: red;
+    }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+    p {
+        color: yellow;
+    }
+}
