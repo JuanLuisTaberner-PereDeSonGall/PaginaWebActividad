@@ -18,13 +18,28 @@
         margin: 0px;
     }
 
+    ::selection {
+        background-color: var(--color-texto);
+        color: var(--color-acento);
+    }
+
+    a {
+        color: var(--color-acento);
+    }
+
     header {
         background-color: var(--color-header);
         display: flex;
         justify-content: space-evenly;
-        height: 100px;
+        height: auto;
+
     }
-    #LogoMain img{
+
+    header .linkanimate:hover {
+        transform: translateY(-5px);
+    }
+
+    #LogoMain img {
         height: 150px;
     }
 
@@ -69,12 +84,13 @@
         font-size: 1rem;
     }
 
-    .community{
+    .community {
         display: flex;
         align-self: center;
 
     }
-    .community a{
+
+    .community a {
         text-decoration: none;
         font-family: DoomzDay;
     }
@@ -86,7 +102,7 @@
         align-self: center;
         height: auto;
         position: relative;
-        border: 1px solid ;
+        border: 1px solid;
         border-color: var(--color-acento);
         border-radius: 10px;
         background-color: var(--color-borde);
@@ -103,12 +119,11 @@
         position: relative;
         transition: color 0.3s ease;
     }
-    #loginimg{
+
+    #loginimg {
         width: 50px;
         height: auto;
     }
-
-
 
     nav {
         position: sticky;
@@ -118,7 +133,6 @@
         display: flex;
         justify-content: center;
         gap: 100px;
-
         font-family: DoomzDay;
     }
 
@@ -131,8 +145,6 @@
         margin-top: 10px;
         line-height: 0.6;
         scale: 0.8;
-
-    
     }
 
     nav a {
@@ -143,13 +155,11 @@
         border: 0px;
         position: relative;
         transition: color 0.3s ease;
-
     }
 
     nav a:hover {
         color: #ffffff;
     }
-
 
     main {
         width: 60%;
@@ -158,20 +168,163 @@
         margin: auto;
         opacity: .99;
     }
-    .MensajeSecreto{
+
+    .SecPrincipal {
+        position: relative;
+        margin-bottom: 150px;
+        border-radius: 15px;
+        background-color: var(--color-fondo);
+        border: 4px solid;
+        border-color: var(--color-borde);
+    }
+
+    #recibimiento {
+        position: relative;
+        margin-top: 150px;
+    }
+
+    .MensajeSecreto {
         font-family: AncientRunes;
         display: flex;
         flex-direction: row;
         transform: scaleX(-1);
     }
-    .SecPrincipal {
-        border-radius: 15px;
-        background-color: var(--color-fondo);
+
+    .titulosection {
+        width: 90%;
+        margin: 10px 0px 0px 0px;
+        gap: 0px;
+        padding: 0px;
+        font-family: DoomzDay;
+        margin-left: 5%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid;
+        border-radius: 10px;
+        border-color: var(--color-borde);
     }
 
-    a {
+    .textosets {
+        margin: auto;
+        margin-top: 20px;
+        width: 70%;
+        font-size: 20px;
+    }
+
+    #comentarios {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: var(--color-fondo);
+        border-radius: 15px;
+    }
+
+    #comentarios h2 {
+        text-align: center;
         color: var(--color-acento);
     }
+
+    .formulario-comentario {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .formulario-comentario input,
+    .formulario-comentario textarea {
+        background-color: #121212;
+        color: #f0f0f0;
+        border: 1px solid var(--color-borde);
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .formulario-comentario button {
+        background-color: var(--color-acento);
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .lista-comentarios {
+        list-style: none;
+        padding: 0;
+    }
+
+    .lista-comentarios li {
+        margin-bottom: 10px;
+        border-bottom: 1px solid var(--color-borde);
+        padding-bottom: 5px;
+    }
+
+    footer {
+        width: auto;
+        background-color: var(--color-nav);
+        color: var(--color-texto);
+        padding: 20px;
+        text-align: center;
+        border-top: 2px solid var(--color-borde);
+        font-family: SoleSurvivor;
+
+    }
+
+    footer section {
+        margin: 10px 0;
+    }
+
+    .footer-links ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-links a {
+        text-decoration: none;
+        color: var(--color-acento);
+        transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: #fff;
+    }
+
+    .retoescondido {
+        color: var(--color-acento);
+    }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  text-align: center;
+}
+
+table th, table td {
+  border: 1px solid var(--color-borde);
+  padding: 10px;
+  color: var(--color-texto);
+}
+
+table th {
+  background-color: var(--color-nav);
+  color: var(--color-acento);
+}
+
+table tr:nth-child(even) {
+  background-color: #1e1e1e; /* filas alternas */
+}
+
+
+
+
+
 }
 
 /* por ahora centrate en el pc*/
@@ -187,8 +340,6 @@
         color: yellow;
     }
 }
-
-
 
 @font-face {
     font-family: DoomzDay;
@@ -208,4 +359,9 @@
 @font-face {
     font-family: SoleSurvivor;
     src: url(../../Fuentecillas/sole_survivor/SoleSurvivor.ttf);
+}
+
+@font-face {
+    font-family: SoleSurvivorRegular;
+    src: url(../../Fuentecillas/sole_survivor/SoleSurvivorRegular.ttf);
 }

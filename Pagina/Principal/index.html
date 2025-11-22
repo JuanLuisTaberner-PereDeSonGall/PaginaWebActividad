@@ -18,14 +18,14 @@
 
 <body>
     <header>
-        <div   id="LogoMain">
-        <a href="index.html">
-            <img src="../../Imagenes/IndexImages/ChatGPT Image 21 nov 2025, 13_29_15.png" alt="Logo de la página">
-        </a>
+        <div id="LogoMain" class="linkanimate">
+            <a href="index.html">
+                <img src="../../Imagenes/IndexImages/ChatGPT Image 21 nov 2025, 13_29_15.png" alt="Logo de la página">
+            </a>
         </div>
         <section class="Tienducha">
             <article>
-                <a href="https://store.steampowered.com" target="_blank"><img class="Steam_Logo"
+                <a href="https://store.steampowered.com" target="_blank"><img class="Steam_Logo linkanimate"
                         src="../../Imagenes/IndexImages/Steam_Logo.png" alt="Steam"></a>
             </article>
             <h2>
@@ -33,7 +33,7 @@
             </h2>
             <article>
                 <a href="https://store.epicgames.com/es-ES" target="_blank">
-                    <img class="EpiG_Logo" src="../../Imagenes/IndexImages/EGdescarga-removebg-preview.png"
+                    <img class="EpiG_Logo linkanimate" src="../../Imagenes/IndexImages/EGdescarga-removebg-preview.png"
                         alt="Epic games">
                 </a>
             </article>
@@ -41,7 +41,7 @@
         <div class="buscador">
             <input type="text" placeholder="Buscar...">
         </div>
-        <article class="community">
+        <article class="community linkanimate">
             <a href="https://steamcommunity.com/?l=spanish" target="_blank">
                 <h2>
                     Comunidad
@@ -52,9 +52,10 @@
 
 
 
-        <div class="accountdoing">
+        <div class="accountdoing ">
             <img id="loginimg" src="../../Imagenes/IndexImages/logindescarga-removebg-preview.png" alt="Login foto">
-            <p><a href="../Cuenta/Login.html">Login</a>/<a id="register" href="../Cuenta/Signin.html">Register</a></p>
+            <p><a href="../Cuenta/Login.html" class="linkanimate">Login</a>/<a id="register" class="linkanimate"
+                    href="../Cuenta/Signin.html">Register</a></p>
         </div>
 
 
@@ -77,23 +78,83 @@
 
     <main>
         <section id="recibimiento" class="SecPrincipal">
-            <h1>TOP 30 JUEGOS </h1>
-            <p>En esta pagina web teneis 30 juegos de los mejores valorados por la comunidad pero delicadamente seleccionados para hacerte más facil descubrir nuevos generos. Da igual si vienes debido a que tu genero favorito hace mucho que no tiene ningun hit o si simplemente no quieres perder el tiempo descubriendo generos sin saber que juegos jugar, aqui te recomiendo un par que por estadistica y lógica es múy probable que te gusten</p>
+            <h1 class="titulosection">TOP 30 JUEGOS </h1>
+            <p class="textosets">En esta página encontrarás una selección de 30 juegos que he jugado personalmente y que
+                te recomiendo de verdad. No es una lista cualquiera: son títulos que me han sorprendido, enganchado o
+                hecho descubrir géneros que ni sabía que me gustaban. <br>
+                Si buscas algo nuevo, si estás cansado de jugar siempre a lo mismo o simplemente quieres explorar
+                géneros diferentes, aquí tienes un buen punto de partida. Quizás acabes encontrando tu próximo juego
+                favorito.</p>
 
             <p class="MensajeSecreto"> si no tienes cultura ni te molestes</p>
         </section>
         <section id="SecPesoEnGB" class="SecPrincipal">
-            <h1 class="PesoEnGB">peso en gb</h1>
+            <h1 class="PesoEnGB titulosection">peso en gb</h1>
+            <table class="ranking">
+                <tbody>
+
+                </tbody>
+            </table>
         </section>
         <section id="SecHowLongToBeat" class="SecPrincipal">
-            <h1 class="HowLongToBeat">how long to beat</h1>
+            <h1 class="HowLongToBeat titulosection">how long to beat</h1>
+            <h2>Tabla de ejemplo (5x6)</h2>
+  <table>
+    <thead>
+    <tbody>
+      <tr><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td></tr>
+      <tr><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td></tr>
+      <tr><td>K</td><td>L</td><td>M</td><td>N</td><td>O</td></tr>
+      <tr><td>P</td><td>Q</td><td>R</td><td>S</td><td>T</td></tr>
+      <tr><td>U</td><td>V</td><td>W</td><td>X</td><td>Y</td></tr>
+      <tr><td>Z</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+    </tbody>
+  </table>
+
         </section>
         <section class="SecPrincipal" id="SecAñoLanzamiento">
-            <h1 class="AñoLanzamiento"> año de lanzamiento</h1>
+            <h1 class="AñoLanzamiento titulosection"> año de lanzamiento</h1>
         </section>
+        <section id="comentarios" class="SecPrincipal">
+            <h2>Comentarios de los usuarios</h2>
+
+            <form action="" method="post" class="formulario-comentario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4" required
+                    placeholder="Escribe tu opinión..."></textarea>
+
+                <button type="submit">Enviar comentario</button>
+            </form>
+
+            <ul class="lista-comentarios">
+                <li><strong>Ana:</strong> Me encantó la selección de juegos, muy variada.</li>
+                <li><strong>David:</strong> Echo en falta algunos clásicos como Half-Life.</li>
+                <li><strong>Lucía:</strong> ¡Buen diseño! El modo oscuro es perfecto.</li>
+            </ul>
+        </section>
+
     </main>
     <footer>
-        <h1>aqui esta el footer</h1>
+        <section class="footer-info">
+            <p>© 2025 Juan Luis Taberner Ibañez. Todos los derechos reservados.</p>
+        </section>
+
+        <section class="footer-links">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="https://howlongtobeat.com/">How Long To Beat pagina oficial</a></li>
+                <li class="retoescondido">Encontrarás y descifrarás todos los mensajes secretos?</li>
+            </ul>
+        </section>
+
+        <section class="footer-social">
+            <a href="https://store.steampowered.com" target="_blank">Steam</a> |
+            <a href="https://store.epicgames.com/es-ES" target="_blank">Epic Games</a>
+        </section>
+
     </footer>
 </body>
 
