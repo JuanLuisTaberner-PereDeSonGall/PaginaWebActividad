@@ -1,48 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author"  content="Juan Luis Taberner Ibañez">
+    <meta name="author" content="Juan Luis Taberner Ibañez">
     <meta name="description" content="Página principal, aqui se ven las tres tablas">
     <meta name="copyright" content="© 2025 Juan Luis Taberner Ibañez. Todos los derechos reservados.">
-    <meta name="keywords" content="Classificación, Videojuegos, fecha de lanzamiento, tiempo promedio en pasarlo, Alfabetico, "> <!--Aqui faltan cosas, al volver hay que llenar más-->
+    <meta name="keywords"
+        content="Classificación, Videojuegos, fecha de lanzamiento, tiempo promedio en pasarlo, Alfabetico, ">
+    <!--Aqui faltan cosas, al volver hay que llenar más-->
     <title>Top 30 Juegos</title>
     <link rel="stylesheet" href="indexSty.css" type="text/css">
     <link rel="icon" href="../../Imagenes/IndexImages/ChatGPT Image 21 nov 2025, 13_29_15.png" type="image/x-icon">
 
 </head>
+
 <body>
     <header>
-        <img src="../../Imagenes/IndexImages/ChatGPT Image 21 nov 2025, 13_29_15.png" alt="Logo de la página">
-        <article class="accountdoing">
-            <a class="login" href="Cuenta/Login.html">Login	</a>
-            <a class="signin" href="Cuenta/Signin.html">Register</a>
+        <div   id="LogoMain">
+        <a href="index.html">
+            <img src="../../Imagenes/IndexImages/ChatGPT Image 21 nov 2025, 13_29_15.png" alt="Logo de la página">
+        </a>
+        </div>
+        <section class="Tienducha">
+            <article>
+                <a href="https://store.steampowered.com" target="_blank"><img class="Steam_Logo"
+                        src="../../Imagenes/IndexImages/Steam_Logo.png" alt="Steam"></a>
+            </article>
+            <h2>
+                Tienda
+            </h2>
+            <article>
+                <a href="https://store.epicgames.com/es-ES" target="_blank">
+                    <img class="EpiG_Logo" src="../../Imagenes/IndexImages/EGdescarga-removebg-preview.png"
+                        alt="Epic games">
+                </a>
+            </article>
+        </section>
+        <div class="buscador">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <article class="community">
+            <a href="https://steamcommunity.com/?l=spanish" target="_blank">
+                <h2>
+                    Comunidad
+                </h2>
+            </a>
+
         </article>
-    
-    
+
+
+
+        <div class="accountdoing">
+            <img id="loginimg" src="../../Imagenes/IndexImages/logindescarga-removebg-preview.png" alt="Login foto">
+            <p><a href="../Cuenta/Login.html">Login</a>/<a id="register" href="../Cuenta/Signin.html">Register</a></p>
+        </div>
+
+
     </header>
     <nav class="MenuInicial">
-        <a class="dirección" href="index.html">Inicio</a>
-        <a class="dirección" href="#PesoEnGB">Peso en GB</a>
-        <a class="dirección" href="#HowLongToBeat">How Long To Beat</a>
-        <a class="dirección" href="#AñoLanzamiento">Año de lanzamiento</a>
+        <a class="dirección" href="index.html">
+            <h2>Inicio</h2>
+        </a>
+        <a class="dirección" href="#PesoEnGB">
+            <h2>Peso en GB</h2>
+        </a>
+        <a class="dirección" href="#HowLongToBeat">
+            <h2>How Long To Beat</h2>
+        </a>
+        <a class="dirección" href="#AñoLanzamiento">
+            <h2>Año de lanzamiento</h2>
+        </a>
 
     </nav>
 
     <main>
-        <section id="recibimiento">
-        </section>
-        <section>
-        <h1 id="PesoEnGB">peso en gb</h1>
-        </section>
-        <h1 id="HowLongToBeat">how long to beat</h1>
-        <h1 id="AñoLanzamiento"> año de lanzamiento</h1>
+        <section id="recibimiento" class="SecPrincipal">
+            <h1>TOP 30 JUEGOS </h1>
+            <p>En esta pagina web teneis 30 juegos de los mejores valorados por la comunidad pero delicadamente seleccionados para hacerte más facil descubrir nuevos generos. Da igual si vienes debido a que tu genero favorito hace mucho que no tiene ningun hit o si simplemente no quieres perder el tiempo descubriendo generos sin saber que juegos jugar, aqui te recomiendo un par que por estadistica y lógica es múy probable que te gusten</p>
 
-
+            <p class="MensajeSecreto"> si no tienes cultura ni te molestes</p>
+        </section>
+        <section id="SecPesoEnGB" class="SecPrincipal">
+            <h1 class="PesoEnGB">peso en gb</h1>
+        </section>
+        <section id="SecHowLongToBeat" class="SecPrincipal">
+            <h1 class="HowLongToBeat">how long to beat</h1>
+        </section>
+        <section class="SecPrincipal" id="SecAñoLanzamiento">
+            <h1 class="AñoLanzamiento"> año de lanzamiento</h1>
+        </section>
     </main>
     <footer>
         <h1>aqui esta el footer</h1>
     </footer>
 </body>
+
 </html>
